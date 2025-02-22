@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <script defer src="./portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/babcc81265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./img/LogoME.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                    <p>CSE Student</p>
+                    <h1>Hi, I'm <span class="typing-text">Anurag Aman</span><br>From Techno International, Batanagar</h1>
+            </div>
+        </div>
+    
+    </div>
+
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello, I'm Anurag Aman, a passionate and driven 3rd-year student pursuing a degree in Computer Science and Engineering at
+                       Techno International Batanagar. I'm on a journey to explore the ever-evolving world of technology, and I'm excited to share 
+                       my experiences and accomplishments with you.</p>
+
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                           <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Figma</span><br>Designing App interfaces</li>
+
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>12th from Divine Sainik School, Varanasi.</li>
+                            <li><span>2020</span><br>10th from GTPS Lohardaga, Jharkhand.</li>
+
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********services******** -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Absolutely! Web design is like creating a digital masterpiece. I blend creativity and functionality to craft visually 
+                       stunning and user-friendly websites. From layout and color schemes to navigation and responsiveness.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design is like the magic wand of the digital world. UI, or User Interface design, focuses on creating visually 
+                       appealing and intuitive layouts that users can interact with. It's all about the look, feel, and overall presentation 
+                       of a digital product.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>Elevate your visuals with my expert video editing service! From seamless cuts to dynamic effects, I transform raw footage 
+                    into captivating stories. Unleash the power of polished and professional videos for your content.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- **********portfolio********** -->
+    <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/work 1.png" alt="loading">
+                    <div class="layer">
+                        <h3>Photography Website</h3>
+                        <p>Download high resolution pictures and free stock wallpapers from my website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./img/work2.png" alt="loading" style="height: 45vh;">
+                    <div class="layer">
+                        <h3>UI Designing</h3>
+                        <p>Basically! I also design UI interface of an android application and here it's a sample of my own project.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+               </div>
+           </div>
+           <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--******contact******-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> anuragaman10@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-square-alt"></i> 8709028804</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anurag-aman-228a98259/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Anurag Aman. 2023- All Rights Reserved <i class="fa-sharp fa-solid fa-circle-check"></i></p>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>   
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwS-Qyrmj0mPBxFi5ahELiv0r7-c58YumLOiDT7VqGjBPQu_IjCx7ugidQMA47YxS2PQQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.copy{
+     height: 40px;
+     margin-left: 330px;
+     background: rgb(255, 47, 89);
+     margin-bottom: 15px;
+     padding-bottom: 10px;
+}
+
+.copy:hover {
+    background: rgb(215, 24, 62);
+}
+
+select, input {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon:first-child {
+    left: 5px;
+    transform: scale(1);
+}
+
+.toggle-icon:last-child {
+    right: 5px;
+    transform: scale(0);
+}
+
+/* Hidden Checkbox */
+#darkModeSwitch {
+    display: none;
+}
+
+#darkModeSwitch:checked + .toggle {
+    background: #404040;
+}
+
+#darkModeSwitch:checked + .toggle .toggle-icon:first-child {
+    transform: scale(0);
+}
+
+#darkModeSwitch:checked + .toggle .toggle-icon:last-child {
+    transform: scale(1);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}

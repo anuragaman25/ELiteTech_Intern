@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌡️Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeSwitch" onclick="toggleDarkMode()">
+        <label for="darkModeSwitch" class="toggle">
+            <span class="toggle-icon">🌞</span>
+            <span class="toggle-icon">🌙</span>
+        </label>
+    </div>
+    
+    <div class="container">
+        <h2>Temperature Converter<p id="emojiDisplay" style="font-size: 1rem; text-align: center;">🌡️</p></h2>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+        <select id="unit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+        <h3 id="result"></h3>
+        <!-- Copy Result Button -->
+     <button onclick="copyResult()" class="copy">📋</button>
+    </div>
+    
+    
+    <script src="temp.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: #b062ff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b062ff;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Landing Section */
+.section_1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.landing-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+.content-text {
+    position: relative;
+    z-index: 2;
+}
+
+.section-headtext {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.section-subheadtext {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #b062ff;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #8a40d8;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background: #f5f5f5;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Services Section */
+.services {
+    background: white;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    background: #b062ff;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    background: #8a40d8;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background: #222;
+    color: white;
+    padding: 20px 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+footer {
+    background: #151515;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-headtext {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-subheadtext {
+        font-size: 20px;
+    }
+    header {
+        padding: 15px 20px;
+    }
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-headtext {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .section-subheadtext {
+        font-size: 18px;
+    }
+}
+
+
+/* Sticky Navbar */
+.sticky {
+  background: black;
+  transition: 0.3s ease-in-out;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Fade-in Animation */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  margin-left: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  background: #b062ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-btn:hover {
+  background: #8a40d8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
+
+
+/* Dark Mode - Full Theme Change */
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background: #1e1e1e;
+}
+
+.dark-mode .logo {
+  color: #b062ff;
+}
+
+.dark-mode nav ul {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.dark-mode .section_1 {
+  background: #222;
+}
+
+.dark-mode .about,
+.dark-mode .services,
+.dark-mode .contact,
+.dark-mode .pricing {
+  color: white;
+  background: #1a1a1a;
+}
+
+.dark-mode .service {
+  background: #b062ff;
+}
+.dark-mode .service:hover {
+  background: #8a40d8;
+  cursor: pointer;
+}
+
+.dark-mode .pricing {
+  background: #222;
+}
+
+.dark-mode .contact {
+  background: #0c0c0c;
+}
+
+.dark-mode footer {
+  background: #000000;
+}
+.dark-mode .button {
+  background: #b062ff;
+}
+
+.dark-mode .button:hover {
+  background: #8a40d8;
+}
+
+.dark-mode .dark-mode-btn {
+  background: white;
+  color: black;
+}
+
+.dark-mode .dark-mode-btn:hover {
+  background: #ddd;
+}
+
+/* Ensure Headings Stay White */
+.section-headtext, 
+.section-subheadtext {
+    color: white !important;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode h2{
+  color: white;
+}
+
+.dark-mode p{
+  color: white;
+}
+
+.section-headtext, .section-subheadtext {
+    color: white !important;
+}
+
+.dark-mode .pricing h2{
+  color: white;
+}
+
+.dark-mode .pricing p{
+  color: white;
+}
+
+/* Membership Cards */
+.pricing-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.plan_card {
+    background: #b062ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.plan_card h3{
+  color: #000000;
+}
+
+.plan_card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: rgb(65, 55, 55);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gallery */
+.gallery-container img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pricing {
+  background: white;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.pricing p {
+  font-size: 32px;
+  color: #333;
+}
+
+.pricing-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.plan_card {
+  width: 30%;
+  padding: 20px;
+  background: #b062ff;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.plan_card:hover {
+  background: #8a40d8;
+  transform: scale(1.05);
+}
+
+
