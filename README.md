@@ -17,3 +17,7 @@
 📧 **Email:** [anuragaman10@gmail.com](mailto:anuragaman10@gmail.com)  
 🔗 **GitHub:** [anuragaman25](https://github.com/anuragaman25)  
 🔗 **LinkedIn:** [anuragaman25](https://www.linkedin.com/in/anuragaman25)  
+
+## 🙌 Acknowledgments
+Special thanks to:
+- **EliteTech Internship Team for the opportunity**
